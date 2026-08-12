@@ -1,213 +1,46 @@
 {
-  "summary": {
-    "icon": {
-      "url": "/assets/logo3.png",
-      "tint": false
-    },
-    "title": "Mind in Motion",
-    "description": "Calm the mind. Move the body"
-  },
   "home": {
     "element": {
       "type": "list",
       "elements": [
         {
           "type": "alert",
-          "title": "Mind Move",
-          "message": "Link movement and mental health",
-          "icon": "/assets/logo1.png"
-        },
-        {
-          "type": "survey",
-          "action": {
-            "text": "Surveys",
-            "action": "navmodal://Survey"
-          }
+          "title": "ED Connect",
+          "message": "Hospital to School Transition Support"
         },
         {
           "type": "devices",
           "summary": [
             {
               "device_id": "device_1",
-              "text": "Oura Ring",
-              "icon": {
-                "url": "/assets/oura.png"
-              }
-            }
-          ]
-        },
-        {
-          "type": "carousel",
-          "title": "Courses from headspace",
-          "actions": [
-            {
-              "text": "Meditation Basics",
-              "icon": {
-                "url": "/assets/001-medicine.png",
-                "tint": false
-              },
-              "action": "flow://flows/Meditation Basics",
-              "backgroundcolor": "#26FFA726"
-            },
-            {
-              "text": "Sports|Recovery",
-              "icon": {
-                "url": "/assets/020-person.png",
-                "tint": false
-              },
-              "action": "flow://flows/Sports Recovery",
-              "backgroundcolor": "#2651CF66"
-            },
-            {
-              "text": "Sports|Rehab",
-              "icon": {
-                "url": "/assets/030-yoga.png",
-                "tint": false
-              },
-              "action": "flow://flows/Sports Rehab",
-              "backgroundcolor": "#265C7CFA"
-            }
-          ]
-        },
-        {
-          "type": "tiles",
-          "title": "Resources",
-          "actions": [
-            {
-              "text": "More About ACL Recovery",
-              "icon": {
-                "url": "/assets/025-medicine.png",
-                "tint": false
-              },
-              "action": "https://acltear.info/best-results-acl-reconstruction/",
-              "backgroundcolor": "#1A5C2FDA",
-              "markcompleted": true
-            },
-            {
-              "text": "Contact",
-              "icon": {
-                "url": "/assets/support.png",
-                "tint": false
-              },
-              "action": "navpage://Contact",
-              "backgroundcolor": "#1A00C2FF"
+              "text": "Epic"
             }
           ]
         }
       ]
     }
   },
-  "surveys": {
-    "morning_random": {
-      "type": "random",
-      "period": "7",
-      "gap": "1",
-      "choose": 7,
-      "time":"08:00",
-      "expiry": "04:00",
-      "paths": [
-        "flow://flows/Morning Pair 1",
-        "flow://flows/Morning Pair 2",
-        "flow://flows/Morning Pair 3",
-        "flow://flows/Morning Pair 4",
-        "flow://flows/Morning Pair 5",
-        "flow://flows/Morning Pair 6",
-        "flow://flows/Morning Pair 7"
-      ]
-    },
-    "evening_random": {
-      "type": "random",
-      "period": "7",
-      "gap": "1",
-      "choose": 7,
-      "time":"20:00",
-      "expiry": "04:00",
-      "paths": [
-        "flow://flows/Evening Pair 1",
-        "flow://flows/Evening Pair 2",
-        "flow://flows/Evening Pair 3",
-        "flow://flows/Evening Pair 4",
-        "flow://flows/Evening Pair 5",
-        "flow://flows/Evening Pair 6",
-        "flow://flows/Evening Pair 7"
-      ]
-    }
-  },
   "devices": {
     "device_1": {
       "type": "Oura",
-      "connect_title": "Login to Oura",
-      "connect_description": "This study requires Oura integration. We are about to send you to Oura to authenticate and then you will be redirected back to our app",
-      "android_sync": "deeplink://com.ouraring.oura",
-      "ios_sync": "deeplink://Oura://",
-      "webhook_data_types": [
-        "sleep",
-        "workout",
-        "daily_activity"
-      ],
+      "connect_title": "Login to Epic",
+      "connect_description": "This study requires Epic integration. We are about to send you to Epic to authenticate and then you will be redirected back to our app",
       "scopes": [
-        "daily",
-        "workout",
-        "sleep",
-        "ring_configuration"
-      ],
-      "jobs": [
-        "job_1",
-        "job_2"
+        "launch/patient",
+        "patient/Patient.read",
+        "patient/Encounter.read",
+        "patient/Condition.read",
+        "patient/CarePlan.read",
+        "patient/DocumentReference.read",
+        "patient/Binary.read",
+        "patient/MedicationRequest.read",
+        "patient/CareTeam.read",
+        "patient/Practitioner.read",
+        "patient/Location.read",
+        "patient/Procedure.read",
+        "patient/ServiceRequest.read",
+        "openid fhirUser"
       ]
-    }
-  },
-  "goals": {
-    "goal_1": {
-      "device_id": "device_1",
-      "data_type": "daily_activity",
-      "type": "percentile",
-      "field": "active",
-      "required_days": 10,
-      "percentile": 0.6,
-      "show_loading": true
-    }
-  },
-  "jobs": {
-    "job_1": {
-      "type": "device",
-      "service": "Oura",
-      "data_type": "daily_activity",
-      "days": 1,
-      "condition": [
-        "non_wear_time",
-        ">",
-        "36000"
-      ],
-      "notification_id": "notification_1"
-    },
-    "job_2": {
-      "type": "device",
-      "service": "Oura",
-      "data_type": "daily_activity",
-      "days": 1,
-      "condition": [
-        "steps",
-        "<",
-        "2000"
-      ],
-      "notification_id": "notification_2"
-    }
-  },
-  "notifications": {
-    "notification_1": {
-      "type": "remote",
-      "expiry": "1",
-      "title": "Tracker Alert!",
-      "message": "Hi! We’ve noticed your tracker hasn’t recorded much data over the past two days. Please try to wear it as much as possible—ideally all day. If it’s not working or you’re having trouble, let us know so we can help.",
-      "action": "navpage://Devices"
-    },
-    "notification_2": {
-      "type": "remote",
-      "expiry": "1",
-      "title": "Tracker Alert!",
-      "message": "Hi! Your step count is low, make sure you to walk and stay active.",
-      "action": "navpage://Devices"
     }
   }
 }
