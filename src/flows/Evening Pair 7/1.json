@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 7: Anxiety and mood",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How would you rate your overall mood at the end of today? (0% = very low, 100% = very high)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

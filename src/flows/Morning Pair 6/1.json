@@ -1,0 +1,14 @@
+{
+    "header_text": "Morning — Pair 6: Knee function",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How would you rate the overall condition of your reconstructed knee this morning? (0% = very poor, 100% = completely normal)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

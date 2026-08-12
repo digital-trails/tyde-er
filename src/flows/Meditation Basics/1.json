@@ -1,0 +1,72 @@
+{
+    "header_text": "Learn the Basics of Meditation",
+    "elements": [
+        {
+            "type": "WebList",
+            "variable_name": "meditation_basics",
+            "items": [
+                {
+                    "text": "Session 1",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=0",
+                    "complete_text": "Did you complete the session 1 of the meditation basics?"
+                },
+                {
+                    "text": "Session 2",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=1",
+                    "complete_text": "Did you complete the session 2 of the meditation basics?"
+                },
+                {
+                    "text": "Session 3",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=2",
+                    "complete_text": "Did you complete the session 3 of the meditation basics?"
+                },
+                {
+                    "text": "Session 4",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=3",
+                    "complete_text": "Did you complete the session 4 of the meditation basics?"
+                },
+                {
+                    "text": "Session 5",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=4",
+                    "complete_text": "Did you complete the session 5 of the meditation basics?"
+                },
+                {
+                    "text": "Session 6",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=5",
+                    "complete_text": "Did you complete the session 6 of the meditation basics?"
+                },
+                {
+                    "text": "Session 7",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=6",
+                    "complete_text": "Did you complete the session 7 of the meditation basics?"
+                },
+                {
+                    "text": "Session 8",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=7",
+                    "complete_text": "Did you complete the session 8 of the meditation basics?"
+                },
+                {
+                    "text": "Session 9",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=8",
+                    "complete_text": "Did you complete the session 9 of the meditation basics?"
+                },
+                {
+                    "text": "Session 10",
+                    "subtext": "4 min 30 sec",
+                    "url": "https://my.headspace.com/player/16?authorId=1&contentId=1&contentType=COURSE&mode=meditate&startIndex=9",
+                    "complete_text": "Did you complete the session 10 of the meditation basics?"
+                }
+            ]
+        }
+    ],
+    "navigation_conditions": ["wait_for_complete", "wait_for_click"]
+}

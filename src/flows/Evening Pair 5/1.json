@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 5: Anticipated vs. experienced symptoms",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How much did your reconstructed knee symptoms (e.g., pain, swelling, stiffness) actually limit your physical activity today? (0% = no limitation at all, 100% = completely limited my activity)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

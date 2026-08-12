@@ -1,0 +1,14 @@
+{
+    "header_text": "Morning — Pair 1: Fear of movement",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How fearful are you of re-injuring your reconstructed knee during today's activities? (0% = no fear at all, 100% = extreme fear)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 2: Confidence",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How well did your reconstructed knee hold up during today's physical activity? (0% = not at all well, 100% = completely as expected)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 3: Anticipated vs. experienced pain",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How much pain did you experience in your reconstructed knee during today's activities? (0% = no pain at all, 100% = worst pain imaginable)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 6: Knee function",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How would you rate the overall function of your reconstructed knee today? (0% = could not function at all, 100% = functioned completely normally)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

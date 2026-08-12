@@ -1,0 +1,14 @@
+{
+    "header_text": "Morning — Pair 7: Anxiety and mood",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How anxious are you about how your reconstructed knee will feel during today's activities? (0% = not at all anxious, 100% = extremely anxious)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "header_text": "Evening — Pair 1: Fear of movement",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "How much did fear of your reconstructed knee influence the physical activity you chose to do today? (0% = no influence at all, 100% = completely determined what I did)"
+        },
+        {
+            "type": "Slider",
+            "min": 0,
+            "max": 100
+        }
+    ]
+}
