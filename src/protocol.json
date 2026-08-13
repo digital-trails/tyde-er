@@ -22,7 +22,7 @@
   },
   "devices": {
     "device_1": {
-      "type": "Oura",
+      "type": "Epic",
       "connect_title": "Login to Epic",
       "connect_description": "This study requires Epic integration. We are about to send you to Epic to authenticate and then you will be redirected back to our app",
       "scopes": [
