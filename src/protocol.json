@@ -38,11 +38,11 @@
   "home": {
     "element": {
       "type": "ref",
-      "path": "home_${role,participant}.json"
+      "path": "home_${global:role,Participant}.json"
     }
   },
   "connections": {
     "type": "ref",
-    "path": "connections_${role,participant}.json"
+    "path": "connections_${global:role,Participant}.json"
   }
 }
