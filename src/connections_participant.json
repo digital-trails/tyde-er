@@ -7,6 +7,9 @@
       "patient/Encounter.read",
       "openid",
       "fhirUser"
+    ],
+    "show": [
+      "visits"
     ]
   }
 }

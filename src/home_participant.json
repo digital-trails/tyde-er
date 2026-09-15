@@ -8,10 +8,7 @@
     },
     {
       "type": "epic",
-      "connection_id": "connection_1",
-      "show": [
-        "visits"
-      ]
+      "connection_id": "connection_1"
     }
   ]
 }
