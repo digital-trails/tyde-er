@@ -1,46 +1,48 @@
 {
+  "message_rules": [
+    {
+      "from_role": "Participant",
+      "can_message_roles": [
+        "Admin",
+        "CareProvider",
+        "Guardian"
+      ]
+    },
+    {
+      "from_role": "CareProvider",
+      "can_create_groups": true,
+      "can_message_roles": [
+        "Admin",
+        "Participant",
+        "Guardian"
+      ],
+      "group_member_roles": [
+        "Participant",
+        "Guardian"
+      ]
+    },
+    {
+      "from_role": "Guardian",
+      "can_create_groups": true,
+      "can_message_roles": [
+        "Admin",
+        "CareProvider",
+        "Participant"
+      ],
+      "group_member_roles": [
+        "CareProvider",
+        "Participant"
+      ]
+    }
+  ],
   "home": {
     "element": {
-      "type": "list",
-      "elements": [
-        {
-          "type": "alert",
-          "title": "ED Connect",
-          "message": "Hospital to School Transition Support"
-        },
-        {
-          "type": "devices",
-          "summary": [
-            {
-              "device_id": "device_1",
-              "text": "Epic"
-            }
-          ]
-        }
-      ]
+      "type": "ref",
+      "path": "home_${role,participant}.json"
     }
   },
-  "devices": {
-    "device_1": {
-      "type": "Epic",
-      "connect_title": "Login to Epic",
-      "connect_description": "This study requires Epic integration. We are about to send you to Epic to authenticate and then you will be redirected back to our app",
-      "scopes": [
-        "launch/patient",
-        "patient/Patient.read",
-        "patient/Encounter.read",
-        "patient/Condition.read",
-        "patient/CarePlan.read",
-        "patient/DocumentReference.read",
-        "patient/Binary.read",
-        "patient/MedicationRequest.read",
-        "patient/CareTeam.read",
-        "patient/Practitioner.read",
-        "patient/Location.read",
-        "patient/Procedure.read",
-        "patient/ServiceRequest.read",
-        "openid fhirUser"
-      ]
-    }
+  "connections": {
+    "type": "ref",
+    "path": "connections_${role,participant}.json"
   }
 }

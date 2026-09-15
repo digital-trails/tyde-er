@@ -1,0 +1,12 @@
+{
+  "connection_1": {
+    "type": "Epic",
+    "scopes": [
+      "offline_access",
+      "launch/patient",
+      "patient/Encounter.read",
+      "openid",
+      "fhirUser"
+    ]
+  }
+}

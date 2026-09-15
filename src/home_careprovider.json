@@ -1,0 +1,10 @@
+{
+  "type": "list",
+  "elements": [
+    {
+      "type": "alert",
+      "title": "ED Connect",
+      "message": "Hospital to School Transition Support"
+    }
+  ]
+}
