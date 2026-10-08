@@ -1,8 +1,8 @@
 {
   "message_rules": [
     {
-      "from_role": "Participant",
-      "can_message_roles": [
+      "from_role": "Patient",
+      "direct_to_roles": [
         "CareProvider",
         "Guardian"
       ]
@@ -10,25 +10,25 @@
     {
       "from_role": "CareProvider",
       "can_create_groups": true,
-      "can_message_roles": [
-        "Participant",
+      "direct_to_roles": [
+        "Patient",
         "Guardian"
       ],
       "group_member_roles": [
-        "Participant",
+        "Patient",
         "Guardian"
       ]
     },
     {
       "from_role": "Guardian",
       "can_create_groups": true,
-      "can_message_roles": [
+      "direct_to_roles": [
         "CareProvider",
-        "Participant"
+        "Patient"
       ],
       "group_member_roles": [
         "CareProvider",
-        "Participant"
+        "Patient"
       ]
     }
   ],

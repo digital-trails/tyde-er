@@ -6,7 +6,7 @@
         },
         {
             "type": "Buttons", 
-            "buttons": ["Participant","Guardian"],
+            "buttons": ["Patient","Guardian"],
             "variable_name":"role:x"
         }
     ],
